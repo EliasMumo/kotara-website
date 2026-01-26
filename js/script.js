@@ -278,6 +278,30 @@ function typeWriter(element, text, speed = 50) {
     type();
 }
 
+// ===== FAQ Accordion =====
+function initFAQAccordion() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isActive = question.classList.contains('active');
+            
+            // Close all other answers
+            faqQuestions.forEach(q => {
+                q.classList.remove('active');
+                q.nextElementSibling.classList.remove('show');
+            });
+            
+            // Toggle current answer
+            if (!isActive) {
+                question.classList.add('active');
+                answer.classList.add('show');
+            }
+        });
+    });
+}
+
 // ===== Initialize =====
 document.addEventListener('DOMContentLoaded', () => {
     // Initial navbar state
@@ -287,6 +311,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Highlight current section
     highlightNavLink();
+    
+    // Initialize FAQ Accordion
+    initFAQAccordion();
     
     console.log('Kotara Limited Website Initialized Successfully');
 });
