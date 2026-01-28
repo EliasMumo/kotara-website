@@ -1,31 +1,37 @@
 /* ===== CSS Variables ===== */
 :root {
-    /* Primary Brand Accent (Magenta / Burgundy) */
-    --primary-color: #9E2F52;
-    --primary-dark: #7a2440;
-    --primary-light: #b84a6a;
+    /* Primary Brand Color (Teal / Green) */
+    --primary-color: #18A999;
+    --primary-dark: #148f82;
+    --primary-light: #1dbfad;
+    
+    /* Secondary Accent Color (Gold / Yellow) */
+    --secondary-color: #F2C94C;
+    --secondary-dark: #d4ad3a;
+    
+    /* Supporting Accent (Leaf Green) */
+    --accent-green: #6FCF97;
     
     /* Primary Text Color */
-    --text-color: #1F1F1F;
-    --dark-color: #1F1F1F;
+    --text-color: #1F2D2A;
+    --dark-color: #1F2D2A;
     
     /* Background Colors */
-    --background-color: #F6F6F6;
-    --gray-light: #F6F6F6;
+    --background-color: #FFFFFF;
+    --gray-light: #F9FAFB;
     --white: #FFFFFF;
     
     /* Border / Divider Color */
-    --border-color: #C9C9C9;
-    --gray: #C9C9C9;
+    --border-color: #E5E7EB;
+    --gray: #E5E7EB;
     
     /* Supporting Colors */
-    --secondary-color: #9E2F52;
-    --accent-color: #fdf2f5;
-    --text-light: #555555;
+    --accent-color: #e6f7f5;
+    --text-light: #4B5563;
     
     /* Effects */
-    --shadow: 0 4px 20px rgba(31, 31, 31, 0.08);
-    --shadow-lg: 0 10px 40px rgba(31, 31, 31, 0.12);
+    --shadow: 0 4px 20px rgba(31, 45, 42, 0.08);
+    --shadow-lg: 0 10px 40px rgba(31, 45, 42, 0.12);
     --transition: all 0.3s ease;
     --border-radius: 8px;
 }
@@ -92,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 .underline {
     width: 80px;
     height: 4px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     margin: 0 auto;
     border-radius: 2px;
 }
@@ -124,13 +130,13 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
     background: var(--primary-color);
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(158, 47, 82, 0.3);
+    box-shadow: 0 4px 15px rgba(24, 169, 153, 0.3);
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(158, 47, 82, 0.4);
+    box-shadow: 0 8px 25px rgba(24, 169, 153, 0.4);
 }
 
 .btn-secondary {
@@ -146,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Top Bar ===== */
 .top-bar {
-    background: var(--primary-dark);
+    background: var(--dark-color);
     padding: 10px 0;
     font-size: 0.85rem;
 }
@@ -170,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-contact i {
-    color: var(--white);
+    color: var(--secondary-color);
 }
 
 /* ===== Navigation ===== */
@@ -343,10 +349,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content h1 span {
-    color: var(--white);
-    background: rgba(255, 255, 255, 0.15);
-    padding: 0 10px;
-    border-radius: 4px;
+    color: var(--secondary-color);
 }
 
 .hero-content p {
@@ -585,8 +588,8 @@ h1, h2, h3, h4, h5, h6 {
 .cert-badge {
     display: inline-block;
     padding: 5px 15px;
-    background: var(--accent-color);
-    color: var(--primary-color);
+    background: var(--secondary-color);
+    color: var(--dark-color);
     font-size: 0.8rem;
     font-weight: 600;
     border-radius: 20px;
@@ -699,7 +702,7 @@ h1, h2, h3, h4, h5, h6 {
 .step-number {
     width: 60px;
     height: 60px;
-    background: var(--white);
+    background: var(--secondary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -707,7 +710,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto 20px;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--dark-color);
 }
 
 .step-content h3 {
@@ -872,7 +875,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .client-category h3 i {
     margin-right: 10px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .client-list {
@@ -899,7 +902,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== Contact Section ===== */
 .contact {
     padding: 100px 0;
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    background: var(--dark-color);
 }
 
 .contact-info-grid {
@@ -961,12 +964,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .info-content a:hover {
-    color: var(--primary-light);
+    color: var(--secondary-color);
 }
 
 /* ===== Footer ===== */
 .footer {
-    background: var(--primary-dark);
+    background: var(--dark-color);
     padding: 80px 0 30px;
 }
 
@@ -1000,7 +1003,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-brand h2 span {
-    color: var(--primary-light);
+    color: var(--secondary-color);
     font-weight: 400;
     font-size: 0.6rem;
     display: block;
@@ -1031,7 +1034,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-certifications i {
-    color: var(--primary-light);
+    color: var(--secondary-color);
 }
 
 .footer-links h4,
@@ -1057,7 +1060,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-links a:hover {
-    color: var(--primary-light);
+    color: var(--secondary-color);
     padding-left: 5px;
 }
 
@@ -1076,11 +1079,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-contact a:hover {
-    color: var(--primary-light);
+    color: var(--secondary-color);
 }
 
 .footer-contact i {
-    color: var(--primary-light);
+    color: var(--secondary-color);
     width: 16px;
     flex-shrink: 0;
     margin-top: 3px;
@@ -1114,12 +1117,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-legal a:hover,
 .footer-legal a.active {
-    color: var(--primary-light);
+    color: var(--secondary-color);
 }
 
 /* ===== Page Header (for policy pages) ===== */
 .page-header {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    background: var(--dark-color);
     padding: 140px 0 60px;
     text-align: center;
 }
