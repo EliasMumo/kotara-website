@@ -1,31 +1,31 @@
 /* ===== CSS Variables ===== */
 :root {
-    /* Primary Brand Color (Green) */
-    --primary-color: #729A86;
-    --primary-dark: #5a7d6b;
-    --primary-light: #8fb3a1;
+    /* Primary Brand Accent (Magenta / Burgundy) */
+    --primary-color: #9E2F52;
+    --primary-dark: #7a2440;
+    --primary-light: #b84a6a;
     
     /* Primary Text Color */
-    --text-color: #1F2D2A;
-    --dark-color: #1F2D2A;
+    --text-color: #1F1F1F;
+    --dark-color: #1F1F1F;
     
-    /* Background Color */
-    --background-color: #F5F7F6;
-    --gray-light: #F5F7F6;
+    /* Background Colors */
+    --background-color: #F6F6F6;
+    --gray-light: #F6F6F6;
+    --white: #FFFFFF;
     
-    /* Secondary / Border Color */
-    --border-color: #BFC8C3;
-    --gray: #BFC8C3;
+    /* Border / Divider Color */
+    --border-color: #C9C9C9;
+    --gray: #C9C9C9;
     
     /* Supporting Colors */
-    --secondary-color: #729A86;
-    --accent-color: #e8f0ec;
-    --text-light: #4a5a54;
-    --white: #ffffff;
+    --secondary-color: #9E2F52;
+    --accent-color: #fdf2f5;
+    --text-light: #555555;
     
     /* Effects */
-    --shadow: 0 4px 20px rgba(31, 45, 42, 0.08);
-    --shadow-lg: 0 10px 40px rgba(31, 45, 42, 0.12);
+    --shadow: 0 4px 20px rgba(31, 31, 31, 0.08);
+    --shadow-lg: 0 10px 40px rgba(31, 31, 31, 0.12);
     --transition: all 0.3s ease;
     --border-radius: 8px;
 }
@@ -124,13 +124,13 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
     background: var(--primary-color);
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(114, 154, 134, 0.3);
+    box-shadow: 0 4px 15px rgba(158, 47, 82, 0.3);
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(114, 154, 134, 0.4);
+    box-shadow: 0 8px 25px rgba(158, 47, 82, 0.4);
 }
 
 .btn-secondary {
