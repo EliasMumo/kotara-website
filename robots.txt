@@ -1,11 +1,11 @@
 # Robots.txt for Kotara Limited Website
-# https://kotara-website.vercel.app/
+# https://kotara.co.ke/
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://kotara-website.vercel.app/sitemap.xml
+Sitemap: https://kotara.co.ke/sitemap.xml
 
 # Crawl-delay (optional, be nice to servers)
 Crawl-delay: 1
