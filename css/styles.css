@@ -1,3 +1,21 @@
+/* ===== Google Maps Photo ===== */
+.maps-photo-wrapper {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.google-maps-photo {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: box-shadow 0.2s;
+}
+.google-maps-photo:hover {
+    box-shadow: 0 6px 18px rgba(24,169,153,0.18);
+}
 /* ===== CSS Variables ===== */
 :root {
     /* Primary Brand Color (Teal / Green) */
