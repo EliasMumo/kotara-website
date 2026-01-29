@@ -229,8 +229,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-icon {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     background: var(--primary-color);
     border-radius: 10px;
     display: flex;
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-icon i {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--white);
 }
 
@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 800;
     color: var(--white);
     transition: var(--transition);
@@ -1515,4 +1515,34 @@ h1, h2, h3, h4, h5, h6 {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ===== Disable Image/Video Download ===== */
+img, video {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: auto;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+}
+
+video::-internal-media-controls-download-button {
+    display: none;
+}
+
+video::-webkit-media-controls-download-button {
+    display: none;
 }

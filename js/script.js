@@ -315,5 +315,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize FAQ Accordion
     initFAQAccordion();
     
+    // ===== Disable Image/Video Download =====
+    // Disable right-click on images and videos
+    document.querySelectorAll('img, video').forEach(el => {
+        el.addEventListener('contextmenu', e => e.preventDefault());
+        el.addEventListener('dragstart', e => e.preventDefault());
+    });
+    
+    // Disable right-click globally (optional - uncomment if needed)
+    // document.addEventListener('contextmenu', e => e.preventDefault());
+    
     console.log('Kotara Limited Website Initialized Successfully');
 });
